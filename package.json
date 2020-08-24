@@ -1,0 +1,19 @@
+{
+  "name": "dcp-swagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/node-sass -r ./src/style.scss -o ./docs/ --output-style=compressed | ./node_modules/.bin/webpack --mode production  --progress --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "copy-webpack-plugin": "5.1.1",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "swagger-ui": "^3.32.4",
+    "webpack": "^4.44.1"
+  }
+}

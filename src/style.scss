@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+header {
+    background: #033d58;
+    padding: 10px;
+    color: #fff;
+
+    > div {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .title {
+        color: #ff7c66;
+    }
+
+    .subtitle {
+        display: inline-block;
+        padding: 1px 6px;
+        background: #fff;
+        color: #000;
+        border-radius: 7px;
+        font-size: 11px;
+        position: relative;
+        top: -2px;
+        right: -4px;
+    }
+}
+.body-wrapper {
+    height: calc(100vh - 64px);
+    overflow: auto;
+
+    .details {
+        padding: 20px 50px;
+
+        .base-url-container {
+            font-weight: 600;
+        }
+
+        .description {
+            font-size: 14px;
+        }
+    }
+    .swagger-ui {
+        .auth-wrapper {
+            justify-content: left;
+        }
+
+        .host-container {
+            position: relative;
+
+            label {
+                position: absolute;
+                top: -14px;
+                left: 0px;
+            }
+
+            input {
+                font-size: 14px;
+                font-weight: 700;
+                padding: 5px 40px 5px 10px;
+                border: 2px solid #41444e;
+                border-radius: 4px;
+            }
+        }
+
+        .information-container {
+            display: none;
+        }
+    }
+}
