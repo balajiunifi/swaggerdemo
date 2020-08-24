@@ -11,7 +11,8 @@ module.exports = {
     plugins: [
         new CopyPlugin(
             [
-                { from: './node_modules/swagger-ui/dist/swagger-ui.css', to: './' }
+                { from: './node_modules/swagger-ui/dist/swagger-ui.css', to: './' },
+                { from: './src/font/', to: './font/' }
             ]
         )
     ]

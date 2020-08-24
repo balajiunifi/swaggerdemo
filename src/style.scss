@@ -1,5 +1,7 @@
-body {
-    font-family: sans-serif;
+@import "./font/stylesheet.css";
+
+body, * {
+    font-family: open sans !important;
     margin: 0;
 }
 header {
@@ -19,6 +21,7 @@ header {
 
     .title {
         color: #ff7c66;
+        font-weight: 600;
     }
 
     .subtitle {
@@ -34,11 +37,11 @@ header {
     }
 }
 .body-wrapper {
-    height: calc(100vh - 64px);
+    height: calc(100vh - 65px);
     overflow: auto;
 
     .details {
-        padding: 20px 50px;
+        padding: 20px 50px 10px;
 
         .base-url-container {
             font-weight: 600;
@@ -58,7 +61,7 @@ header {
 
             label {
                 position: absolute;
-                top: -14px;
+                top: -16px;
                 left: 0px;
             }
 
