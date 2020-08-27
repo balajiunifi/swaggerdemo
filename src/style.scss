@@ -41,7 +41,7 @@ header {
     overflow: auto;
 
     .details {
-        padding: 20px 50px 10px;
+        padding: 20px 64px 10px;
 
         .base-url-container {
             font-weight: 600;
@@ -53,30 +53,56 @@ header {
         }
     }
     .swagger-ui {
+        padding: 0px 44px;
+
         .auth-wrapper {
-            justify-content: left;
-        }
-
-        .host-container {
+            display: block;
             position: relative;
+            top: 7px;
 
-            label {
-                position: absolute;
-                top: -16px;
-                left: 0px;
+            .host-container {
+                position: relative;
+                float: left;
+
+                label {
+                    position: absolute;
+                    top: -16px;
+                    left: 0px;
+                }
+
+                input {
+                    font-size: 14px;
+                    font-weight: 700;
+                    padding: 5px 40px 5px 10px;
+                    border: 1px solid #d8dde7;
+                    border-radius: 4px;
+                }
             }
 
-            input {
-                font-size: 14px;
-                font-weight: 700;
-                padding: 5px 40px 5px 10px;
-                border: 2px solid #41444e;
-                border-radius: 4px;
+            .authorize.btn {
+                float: right;
+                position: relative;
+                top: -5px;
             }
         }
 
         .information-container {
             display: none;
+        }
+
+        .scheme-container {
+            box-shadow: none;
+            margin: 0;
+        }
+
+        select {
+            border: 1px solid #d8dde7;
+            box-shadow: none;
+            background-color: #fff;
+        }
+
+        .filter .operation-filter-input {
+            border: 1px solid #d8dde7;
         }
     }
 }

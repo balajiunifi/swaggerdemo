@@ -25,7 +25,6 @@ function initSwagger() {
 
             //update header
             $("header .subtitle").text(spec.info.version);
-            $(".details .base-url").text(spec.host + spec.basePath);
             $(".details .description").text(spec.info.description);
 
             //show everything
